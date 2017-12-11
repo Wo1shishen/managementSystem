@@ -1,0 +1,147 @@
+#cart{
+    height:auto;
+    overflow:hidden;
+    position: relative;
+    #money{
+        position: absolute;
+        left:700px;
+        width:230px;
+        height: 50px;
+        background: red;
+        color: #fff;
+        font:24px/50px "";
+        overflow: hidden;
+        em{
+            display: block;
+            float:left;
+            width:80px;
+            height:50px;
+            text-align: center;
+            font-style: normal;
+        }
+        i{
+            display: block;
+            float:left;
+            width:30px;
+            height:50px;
+            text-align: center;
+            font-style: normal;
+        }
+        span{
+            display: block;
+            float: left;
+            width:120px;
+            height:50px;
+        }
+    }
+}
+
+.goods-cart{
+    height: 380px;
+    padding: 5px 0;
+    width: 100%;
+    .left{
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+        position: relative;
+        .bigbox{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }            
+        }
+   
+    }
+    .center{
+        background: #fff;
+        float: left;
+        width: 300px;
+        height: 300px;
+        padding: 0 30px;
+        margin:0 20px;
+        background: #fff;
+        overflow: hidden;
+        .goods-title{
+            width: 280px;
+            height: 30px;
+            margin:10px 15px;
+            font:14px/30px "";
+            overflow: hidden;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                float:left;
+                font:700 12px/30px "";
+            }
+        }
+        .goods-price{
+            width: 280px;
+            height: 50px;
+            margin:10px 15px;
+            overflow: hidden;
+            i{
+                display: block;
+                color: #C12E2A;
+                float:left;
+                font:24px/48px "";
+                width: 80px;
+                height: 100%;
+                text-align: right;
+            }
+            span{
+                display: block;
+                float:left;
+                color: #C12E2A;
+                font:30px/48px "";
+                width: 150px;
+                height: 100%;
+            }          
+        }
+        .buy{
+            overflow: hidden;
+            .left{
+                float: left;
+                width:150px;
+                height: 40px;
+                margin:10px 15px;
+            }
+            span{
+                font:700 18px/30px "";
+                width:30px;
+                height:30px;
+                display: block;
+                float: left;
+                text-align: center;
+                border: 1px solid #666;
+                cursor: pointer;
+                &.num{
+                    font:18px/30px "";
+                    width:62px;
+                    height:30px;
+                    color:#888888;
+                    margin: 0 5px;
+                    cursor: default;
+                }
+            }
+            .right{
+                margin:10px 0;
+                float: right;
+                width: 100px;
+                height: 40px;
+                background: #C12E2A;
+                text-align: center;
+                color: #fff;
+                font:700 16px/40px "";
+                border-radius:5px ;
+                cursor: pointer;
+            }          
+        }
+        
+    }
+}

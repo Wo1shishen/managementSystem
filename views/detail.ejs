@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			<%= title %>
+		</title>
+		<link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
+		<link rel='stylesheet' href='/bootstrap/css/detail.css' />
+		<script type="text/javascript" src="/bootstrap/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<%- include("./header.ejs",{title:"后台管理系统",isShow:true,headername:name})%>
+		<table border="" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+			<tr>
+				<th class="left">属性</th>
+				<th class="right">属性值</th>
+			</tr>
+			<tr>
+				<td>商品名</td>
+				<td><%= goodsname%></td>
+			</tr>
+			<tr>
+				<td>详细介绍</td>
+				<td><%= title%></td>
+			</tr>
+			<tr>
+				<td>价格</td>
+				<td><%= price%></td>
+			</tr>
+			<tr>
+				<td>图片</td>
+				<td><div><img src="<%= pic%>"></div></td>
+			</tr>
+		</table>
+		
+	</body>
+
+</html>

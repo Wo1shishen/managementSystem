@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>乐购网登录,登陆乐购网-乐购网乐购网</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		
+		
+		<div class="login-content">
+			<div class="title">
+				<div class="left">
+					<i>老用户登录</i>
+					<em>/</em>
+					<span>尊敬的用户，欢迎您回来</span>
+				</div>
+				<div class="right">
+					<span>还没有账号</span>
+					<a href="/register" target="_blank">，立即去注册</a>
+				</div>
+				
+			</div>
+			<div class="content">
+				<div class="left">
+					<form action="/login" method="post">
+						<div class="user">
+							<label class="left-s" for="name">账号:</label>
+							<input type="text" id="name" name="username" placeholder="请输入用户名/邮箱" class="int1 active"/>
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+							</div>
+						</div>
+						<div class="password">
+							<label class="left-s" for="password">密码:</label>
+							<input type="password" id="password" name="password" placeholder="请输入密码" class="int1"/>
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<%if(isShow){%>
+							<div class="error" style="display:block;">
+							登录失败，请输入正确的用户名或密码
+							</div>
+							<%}%>
+						</div>
+						<div class="check-d">
+							<label class="left-s"></label>
+							<div class="check">
+								<input type="checkbox" checked="checked" />
+								两周内免等录
+							</div>
+							<div class="forget">忘记密码？</div>
+						</div>
+						<div class="sum">
+							<label class="left-s" for="submit"></label>
+							<input type="submit" value="登录" class="submit" name="submit"/>
+						</div>
+						<div class="union-login">
+							<label class="left-s"></label>
+							<div class="login-c">
+								<div class="login-c-title">合作网站账号请登录</div>
+								<div class="links">
+									<a href="#" class="link1"></a>
+									<a href="#" class="link2"></a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<div class="right">
+					<a href="#"><img src="images/54a155530607f.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+
+		
+		<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/js/login.js"></script>
+	</body>
+
+</html>

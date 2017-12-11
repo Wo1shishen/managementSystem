@@ -1,0 +1,33 @@
+#list ul {
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	
+}
+
+#list li{
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid #666;
+	list-style: none;
+	width: 70px;
+	height: 40;
+	margin: 5px;
+	font:  16px/40px "";
+	text-align: center;
+	color: #666;
+}
+#list li.active{
+	background:#C12E2A ;
+	color: #fff;
+}
+#list button{
+	margin:0 5px;
+	font:14px/20px "";
+	background: red;
+	color: #FFFFFF;
+	border-radius: 5px;
+}

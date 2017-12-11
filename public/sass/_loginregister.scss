@@ -1,0 +1,251 @@
+    .border-h{
+        border-bottom:4px solid #2a142b;
+    }
+    
+    .login-content{
+        width:1000px;
+        height:auto;
+        background:#fff;
+        border:1px solid #e2e2e2;
+        margin:0 auto;
+        .title{
+            height:66px;
+            overflow:hidden;
+            border-bottom:1px solid #e2e2e2;
+            .left{
+                float: left;
+                height:66px;
+                width:400px;
+                margin-left:50px;
+                i{
+                    font:16px/66px "";
+                    color:#ff3366;
+                    font-style: normal;
+                }
+                span{
+                     font:16px/66px "";
+                    color:#666;
+                }
+                em{
+                     font:14px/66px "";
+                    color:#aaa;
+                    font-style: normal;
+                }
+            }
+            .right{
+                float:right;
+                height:66px;
+                width:400px;
+                margin-right:50px;
+                text-align:right;
+                span{
+                    color:#aaa;
+                    font:14px/66px "";
+                    
+                }
+                a{
+                    text-decoration: none;
+                    font:14px/66px "";
+                    color:#0289cd;
+                }
+            }
+        }
+        .content{
+            padding:30px 85px;
+            width:798px;
+            height:auto;
+            overflow:hidden;
+            div.right{
+                float:right;
+                width:390px;
+                height:auto;
+            }
+            div.left{
+                float:left;
+                width:368px;
+                height:auto;
+            }
+        }
+        form{
+            width:100%;
+            height:100%;
+            div{
+                    &.user,&.password,&.check-d,&.sum,&.union-login,&.sum{
+                        overflow:hidden;
+                        height:40px;
+                    }
+                    &.user,&.password,&checked,&.sum,&.union-login{
+                        margin:5px 5px;
+                    }
+                    &.error-p{
+                        margin-left:85px;
+                        height:14px;
+                        overflow:hidden;
+                    }
+                    &.error{
+                        color:red;
+                        display:none;
+                    }
+                    &.wran{
+                        color:#888;
+                        display:none;
+                    }
+                    &.check{
+                        float:left;
+                        width:120px;
+                        height:40px;
+                        font:12px/40px "";
+                    }
+                    &.forget{
+                        float:right;
+                        width:120px;
+                        height:40px;
+                        font:12px/40px "";
+                    }
+                    &.union-login{
+                         margin-top:10px;
+                         overflow:hidden;
+                    }
+                    &.login-c{
+                        overflow:hidden;
+                        height:42px;
+                        width:260px;
+                        .login-c-title{
+                            font-size:12px;
+                            color:#666;
+                            margin-bottom:5px;
+                        }
+                    } 
+                    &.links{
+                        height:26px;
+                        overflow:hidden;
+                    } 
+                    &.codevalue{
+                        height:30px;
+                        width:80px;
+                        font:12px/30px "";
+                        text-align:center;
+                        border:1px solid #aaa;
+                        float: left;
+                        margin-left:5px;
+                        background:#eee;
+                    }
+                    &.agree{
+                        width:240px;
+                        color:#888;
+                        height:40px;
+                        font:12px/20px "";
+                        margin:15px 0 15px 80px;
+                    }     
+                }
+                
+            label{                
+                &.left-s{
+                    display:block;
+                    height:40px;
+                    width:75px;
+                    text-align:right;
+                    font:16px/40px "";
+                    float: left;
+                    color:#888;
+                }                
+            }
+            
+            i{
+                &.right-i{
+                    display:block;
+                    float:left;
+                    width:16px;
+                    height:16px;
+                    margin-top:10px;
+                    margin-left:5px;                   
+                }
+                &.ok{
+                    background:url(../images/gif/login.gif)  no-repeat;
+                    background-position:-40px -19px;
+                    display:none;
+                }
+                &.error{
+                    background:url(../images/gif/login.gif) no-repeat;
+                     background-position:0 -19px;
+                     display:none;
+                }
+            }
+            
+            input{
+                &.int1{
+                    float:left;
+                    width:240px;
+                    height:38px;
+                    border:1px solid #aaa;
+                    padding:0 10px;
+                    &.active{
+                        border:1px solid red;
+                    }
+                    &.te{
+                        width:150px;
+                    }
+                }
+                &.submit{
+                    width:240px;
+                    height:38px;
+                    background:red;
+                    color:#fff;
+                    border:none;
+                    font:16px/40px "";
+                    margin-left:10px;
+                }
+            }
+            a{
+               &.link1{
+                   width:72px;
+                   height:24px;
+                   background:url(../images/gif/new-login.gif) no-repeat;
+                   background-position:right -168px;
+                   display:block;
+                   float:left;
+                   margin-right:5px;
+                   border-radius:2px;
+               } 
+               &.link2{
+                   width:24px;
+                   height:24px;
+                   background:url(../images/gif/new-login.gif) no-repeat;
+                   background-position:0 -171px;
+                    display:block;
+                   float:left;
+                   border-radius:2px;
+               }
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    #login-register-footer {
+        margin:20px 0;
+        height: 100px;
+        overflow:hidden;
+        overflow: hidden;
+        p {
+            text-align: center;
+            font: 12px/40px "";
+            a {
+                margin: 0 20px;
+                display: inline-block;
+            }
+            span {
+                color: #666;
+                display: inline-block;
+            }
+            &.p1 {
+                margin-top: 10px;
+            }
+        }
+        
+    }
+    
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			<%= title %>
+		</title>
+		<link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
+		<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+
+		<%- include("./header.ejs",{title:title,isShow:false})%>
+		<form style="width: 700px; margin:0 auto;" action="/addgoods" method="post" enctype="multipart/form-data">
+			<div class="input-group input-group-lg" style="width: 100%; overflow: hidden;">
+				<span class="input-group-addon" id="sizing-addon1" style="width:150px; cursor:initial;">属性</span>
+				<input style="width:500px; cursor:initial;" value="内容" type="text" class="form-control" aria-describedby="sizing-addon1" disabled="disabled">
+			</div>
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="goodsname" class="input-group-addon" id="sizing-addon1" style="width:150px;">商品名</label>
+				<input style="width:500px;" id="goodsname" name="goodsname" type="text" class="form-control" placeholder="请输入商品名" aria-describedby="sizing-addon1">
+			</div>
+			
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="title" class="input-group-addon" id="sizing-addon1" style="width:150px;">详细介绍</label>
+				<input style="width:500px;" id="title" name="title" type="text" class="form-control" placeholder="请输入商品说明" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="price" class="input-group-addon" id="sizing-addon1" style="width:150px;">价格</label>
+				<input style="width:500px;" id="price" name="price" type="text" class="form-control" placeholder="请输入商品价格" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="type" class="input-group-addon" id="sizing-addon1" style="width:150px;">存放类型</label>
+				<select style="width:500px;" id="type" name="type" class="form-control"  aria-describedby="sizing-addon1">
+					<option selected="selected" value="1">主要商品</option>
+					<option value="2">特价商品</option>
+					<option value="3">样式商品</option>
+				</select>
+			</div>
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="number" class="input-group-addon" id="sizing-addon1" style="width:150px;">存放编号</label>
+				<input style="width:500px;" id="number" name="number" value="1" type="number" min="1" max="40" step="1" class="form-control" placeholder="请输入商品名" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg" style="width: 100%;">
+				<label for="pic" class="input-group-addon" id="sizing-addon1" style="width:150px;">请上传图片</label>
+				<input style="width:500px;" id="pic" name="pic" type="file" class="form-control"  aria-describedby="sizing-addon1">
+			</div>
+			<div  id="error" class="input-group input-group-lg" style="width: 100%; overflow: hidden; font: 14px/30px '';color: red; ">
+				<% if(isShow){%>
+					<%= err%>
+				<% }%>
+			</div>
+			<input type="submit" value="上传" style="width:80px; height: 30px; font-size: 16px; display: block;margin: 10px auto;"/>
+		</form>
+		<script type="text/jscript" src="/js/addgoods.js"></script>
+	</body>
+
+</html>

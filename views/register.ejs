@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>管理者登录页面</title>
+		
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+
+	<body>
+		
+		<div class="login-content">
+			<div class="title">
+				<div class="left">
+					<i>新用户注册</i>
+					<em>/</em>
+					<span>注册乐购网，的积分换好礼</span>
+				</div>
+				<div class="right">
+					<span>还没有账号</span>
+					<a href="/login" target="_blank">，立即去登录</a>
+				</div>
+
+			</div>
+			<div class="content">
+				<div class="left">
+					<form action="/register" method="post">
+						<div class="user">
+							<label class="left-s" for="qq">QQ号码:</label>
+							<input type="text" name="qq" placeholder="请输入常用qq号码" class="int1 active " />
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+								QQ号码位数错误或已被注册
+							</div>
+							<div class="wran">
+								请填写常用qq号码
+							</div>
+						</div>
+
+						<div class="user">
+							<label class="left-s" for="email">邮箱地址:</label>
+							<input type="text" name="email" placeholder="请输入常用邮箱" class="int1 " />
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+								邮箱格式错误或已被注册
+							</div>
+							<div class="wran">
+								请填写常用邮箱
+							</div>
+						</div>
+						<div class="user">
+							<label class="left-s" for="username">用户名:</label>
+							<input type="text" name="username" placeholder="请输入用户名" class="int1" id="username" />
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+								用户名长度必须是3-15位字母或数字
+							</div>
+							<div class="wran">
+								用户名为长度3-15位字母或数字
+							</div>
+						</div>
+						<div class="user">
+							<label class="left-s" for="password">创建密码:</label>
+							<input type="password" name="password" placeholder="请输入密码" class="int1"  />
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+								密码长度必须是6～16位之间
+							</div>
+							<div class="wran">
+								密码6～16位，区分大小写
+							</div>
+						</div>
+						<div class="user">
+							<label class="left-s">确认密码:</label>
+							<input type="password" placeholder="请确认密码" class="int1"  />
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="error-p">
+							<div class="error">
+								两次密码不一致
+							</div>
+						</div>
+						<div class="user">
+							<label class="left-s">验证码</label>
+							<input type="text" class="int1 te" />
+							<div class="codevalue"></div>
+							<i class="right-i error"></i>
+							<i class="right-i ok"></i>
+						</div>
+						<div class="agree">
+							<input type="checkbox" checked="checked" />
+							我已看过，并同意《乐购网络服务使用协议》
+						</div>
+						<div class="sum">
+							<label class="left-s" for="submit"></label>
+							<input type="submit" value="提交注册" name="submit" class="submit"/>
+						</div>
+					</form>
+				</div>
+				<div class="right">
+					<a href="#"><img src="/images/54a15579ee88f.png"></a>
+				</div>
+			</div>
+		</div>
+
+		
+		<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/js/register.js"></script>
+	</body>
+
+</html>

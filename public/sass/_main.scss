@@ -1,0 +1,179 @@
+@charset "utf-8";
+#main {
+    overflow: hidden;
+    .new-update {
+        overflow: hidden;
+        width: 1180px;
+        margin: 30px auto;
+        .news {
+            display: block;
+            float: left;
+        }
+        li {
+            float: left;
+            margin-left: 60px;
+            display: block;
+            font: 16px/42px "";
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                width: 42px;
+                height: 42px;
+                background: url(../images/gif/header-total.gif);
+                &.i1 {
+                    background-position: right -103px;
+                }
+                &.i2 {
+                    background-position: right -146px;
+                }
+                &.i3 {
+                    background-position: right -189px;
+                }
+            }
+        }
+        .update-timer {
+            display: block;
+            float: right;
+            margin-right: 35px;
+            height: 42px;
+            width: 400px;
+            overflow: hidden;
+            .update-text {
+                color: #666666;
+                width: 150px;
+                font: 18px/20px "";
+                text-align: right;
+                display: block;
+                float: left;
+            }
+            .timers {
+                float: right;
+                display: block;
+                font: 14px/40px "";
+                margin-left: 15px;
+            }
+            .s2 {
+                color: #666;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .s1 {
+                font: 14px/20px "";
+            }
+            .day,
+            .seconds,
+            .minutes,
+            .hours {
+                color: #fff;
+                display: inline-block;
+                vertical-align: middle;
+                background: #ff3366;
+                width: 30px;
+                height: 40px;
+                text-align:center;
+            }
+        }
+    }
+}
+
+#goods {
+    ul {
+        overflow: hidden;
+    }
+    li {
+        float: left;
+        background: #fff;
+        border: 1px solid #F6F6F6;
+        margin: 0 15px 14px 0;
+        width: 280px;
+        height: 372px;
+    }
+    .image {
+        width: 280px;
+        height: 280px;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+    }
+    .explain {
+        font: 14px/36px "";
+        color: #333;
+        overflow: hidden;
+        i {
+            font-style: normal;
+            text-align: right;
+            display: block;
+            float: left;
+            width: 45px;
+            height: 36px;
+        }
+        a {
+            display: block;
+            font: 14px/36px "";
+            float: left;
+            width: 160px;
+            height: 36px;
+        }
+        span {
+            display: block;
+            float: right;
+            height: 36px;
+            width: 70px;
+        }
+    }
+    .pirce {
+        height: 50px;
+        overflow: hidden;
+        i {
+            display: block;
+            font-style: normal;
+            float: left;
+            width: 15px;
+            height: 48px;
+            font: 16px/48px "";
+            color: #FF3366;
+        }
+        b {
+            display: block;
+            float: left;
+            width: 150px;
+            font: 700 30px/48px "";
+            color: #FF3366;
+        }
+        a {
+            display: block;
+            float: left;
+            width: 110px;
+            height: 48px;
+            font: 16px/48px "";
+            text-align: center;
+            background: #C12C26;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    }
+}
+
+div.box {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #C12E2A;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 999;
+}

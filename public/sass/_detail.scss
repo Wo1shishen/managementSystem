@@ -1,0 +1,190 @@
+#goods-detail{
+    height: 380px;
+    padding: 20px 0;
+    .left{
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin-right: 10px;
+        position: relative;
+        .bigbox{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }            
+            .minbox{
+                display: none;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                background: #C12C26;
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+            }
+        }
+        .bigglass{
+            //display: none;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            z-index: 700;
+            left: 305px;
+            top: 0;
+            overflow: hidden;
+            display: none;
+            img{
+                height: 900px;
+                width: 900px;
+                position: absolute;
+            }
+            
+        }
+    
+    .goods-list{
+        padding:5px 15px;
+        background: #DDDDDD;
+        position: relative;
+        width: 270px;
+        height: 53px;
+        overflow: hidden;
+        .first{
+            z-index: 800;
+                position: absolute;
+                left: 0;
+                width: 14px;
+                height: 49px;
+                text-align: center;
+                font: 15px/48px "";
+                border: 1px solid #666;
+                color: #666;
+                background: #ddd;
+                cursor: pointer;
+            };
+        .last{
+            z-index: 800;
+            background: #ddd;
+                position: absolute;
+                right: 0;
+                width: 15px;
+                height: 50px;
+                text-align: center;
+                font: 15px/48px "";
+                color: #666;
+                border: 1px solid #666;
+                cursor: pointer;
+            } 
+        .list-center{
+            position: absolute;
+            width: 2400px;
+            height: 52px;
+            overflow: hidden;
+            left: 20px;
+            ul{
+                width: 2400px;
+                height: 52px;
+            } 
+        }
+        li{
+            width: 48px;
+            height: 48px;
+            margin: 0 18px;
+            border: 1px solid #666;
+            overflow: hidden;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+                border: none;
+                cursor: pointer;
+            }
+            
+        }
+    }
+    }
+    .center{
+        background: #fff;
+        float: left;
+        width: 300px;
+        height: 360px;
+        padding: 0 30px;
+        margin:0 20px;
+        background: #fff;
+        overflow: hidden;
+        .goods-title{
+            width: 280px;
+            height: 30px;
+            margin:10px 15px;
+            font:14px/30px "";
+            overflow: hidden;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .goods-price{
+            width: 280px;
+            height: 50px;
+            margin:10px 15px;
+            overflow: hidden;
+            i{  
+                display: block;
+                font-style: normal;
+                color: #C12E2A;
+                font:16px/48px "";
+                float: left;
+                width: 20px;
+            }
+            span{
+                display: block;
+                color: #C12E2A;
+                font:30px/48px "";
+                width: 150px;
+                float: left;
+                margin-left: 10px;
+            }          
+        }
+        .buy{
+            .left{
+                float: left;
+                width:150px;
+                height: 40px;
+                margin:10px 15px;
+            }
+            span{
+                font:700 18px/30px "";
+                width:30px;
+                height:30px;
+                display: block;
+                float: left;
+                text-align: center;
+                border: 1px solid #666;
+                cursor: pointer;
+                &.num{
+                    font:18px/30px "";
+                    width:62px;
+                    height:30px;
+                    color:#888888;
+                    margin: 0 5px;
+                    cursor: default;
+                }
+            }
+            .right{
+                margin:10px 0;
+                float: right;
+                width: 100px;
+                height: 40px;
+                background: #C12E2A;
+                text-align: center;
+                color: #fff;
+                font:700 16px/40px "";
+                border-radius:5px ;
+                cursor: pointer;
+            }          
+        }
+        
+    }
+}

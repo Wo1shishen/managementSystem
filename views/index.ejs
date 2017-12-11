@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			<%= title %>
+		</title>
+		<link rel='stylesheet' href='/bootstrap/css/bootstrap.css' />
+		<link rel='stylesheet' href='/bootstrap/css/self.css' />
+		<script type="text/javascript" src="/bootstrap/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<%- include("./header.ejs",{title:"后台管理系统",isShow:true,headername:name})%>
+
+		<div id="list" class="container">
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>商品</th>
+						<th>详细介绍</th>
+						<th>价格</th>
+						<th>商品编号</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody class="t1"></tbody>
+				<tbody class="t2"></tbody>
+				<tbody class="t3"></tbody>
+			</table>
+			<ul >
+				<li class="active">主要商品</li>
+				<li >特价商品</li>
+				<li >样式商品</li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript" src="/js/index.js"></script>
+	</body>
+
+</html>
